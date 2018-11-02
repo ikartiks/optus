@@ -36,3 +36,7 @@ in apps build.gradle file, you will have to change the location of keystore to m
 ### Todos
  - Optimise if required
 
+
+### Additional Info
+   - Kindly note I have had experience working on backend, frontend, and noSql technologies as well
+
