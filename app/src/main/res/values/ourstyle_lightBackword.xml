@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="OurLightStyleBackword" parent="@style/Theme.AppCompat.Light.NoActionBar">
+
+        <!-- 1st  System attributes -->
+        <item name="android:windowBackground">@color/white</item>
+        <!--<item name="android:colorBackground">@drawable/light_window_bg</item>-->
+
+        <item name="android:textColor">@color/customThemeLightText</item>
+        <item name="android:textSize">@dimen/text_size_body_name_meaning_description</item>
+
+        <!-- other System attributes Material -->
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+
+    
+    </style>
+
+    <!--<style name="TextLabel" parent="TextAppearance.AppCompat">-->
+        <!--&lt;!&ndash; Hint color and label color in FALSE state &ndash;&gt;-->
+        <!--<item name="android:textColorHint">@color/lightPrimaryText</item>-->
+
+
+        <!--&lt;!&ndash; Label color in TRUE state and bar color FALSE and TRUE State &ndash;&gt;-->
+        <!--<item name="colorAccent">@color/lightAccent</item>-->
+        <!--<item name="colorControlNormal">@color/lightSecTextColor</item>-->
+        <!--<item name="colorControlActivated">@color/lightSecTextColor</item>-->
+        <!--<item name="colorControlHighlight">@color/lightAccent</item>-->
+    <!--</style>-->
+
+</resources>

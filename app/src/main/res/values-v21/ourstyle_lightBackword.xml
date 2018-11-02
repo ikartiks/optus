@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="OurLightStyleBackword" parent="@style/Theme.AppCompat.Light.NoActionBar">
+
+        <!-- 1st  System attributes -->
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:windowContentTransitions">true</item>
+        <!--<item name="android:colorBackground">@drawable/light_window_bg</item>-->
+
+        <item name="android:textColor">@color/customThemeLightText</item>
+        <item name="android:textSize">@dimen/text_size_body_name_meaning_description</item>
+
+        <!-- other System attributes Material -->
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    
+    </style>
+
+</resources>

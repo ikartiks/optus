@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Optus</string>
+    <string name="title_activity_scenario_one">Scenario One</string>
+    <string name="title_activity_landing">Landing</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_scenario_two">Scenario Two</string>
+    <string name="navigate">Navigate</string>
+    <string name="selectPrompt">Please select a place</string>
+    <string name="selectPlace">Select a place</string>
+    <string name="noActiviy">No activity found to handle the intent</string>
+</resources>

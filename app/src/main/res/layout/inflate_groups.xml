@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.AppCompatTextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/GroupName"
+    android:layout_width="@dimen/scroll_item_width"
+    android:layout_height="@dimen/scroll_item_height"
+    android:gravity="center_vertical"
+    android:background="@android:color/transparent"
+    android:textSize="@dimen/text_size_body_large"
+    android:layout_marginBottom="@dimen/stdMarginTopBottom"
+    android:layout_marginTop="@dimen/stdMarginTopBottom"
+    android:layout_marginStart="@dimen/stdMarginLeftRight"
+    android:layout_marginLeft="@dimen/stdMarginLeftRight"
+    tools:text="Group One"
+    android:ellipsize="marquee"
+    android:elevation="@dimen/stdElevationForCards"
+    android:padding="@dimen/stdPaddingForCards"
+    android:singleLine="true"/>
+    

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+>
+    <android.support.constraint.ConstraintLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+    >
+        <android.support.design.widget.AppBarLayout
+                android:id="@+id/AppBar"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:theme="@style/AppTheme.AppBarOverlay"
+                android:transitionName="profile">
+
+            <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="?attr/colorPrimary"
+                    app:titleTextColor="@color/black"
+                    app:popupTheme="@style/AppTheme.PopupOverlay"/>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v7.widget.RecyclerView
+                android:id="@+id/groupRecylerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+                tools:listitem="@layout/inflate_groups"
+                app:layout_constraintTop_toBottomOf="@id/AppBar"
+                android:background="@color/recycler_view_bg"
+        />
+
+        <FrameLayout
+                android:id="@+id/Frame"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/stdMarginTopBottom"
+                app:layout_constraintTop_toBottomOf="@id/groupRecylerView"
+        >
+
+            <android.support.v4.view.ViewPager
+                    android:id="@+id/viewPager"
+                    android:layout_width="match_parent"
+                    tools:listitem="@layout/fragment_pager_item"
+                    android:layout_height="@dimen/pager_height">
+            </android.support.v4.view.ViewPager>
+
+            <android.support.design.widget.TabLayout
+                    android:id="@+id/slidingTabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:tabBackground="@drawable/tab_selector"
+                    app:tabIndicatorHeight="0dp"
+                    app:tabGravity="center"
+                    android:layout_gravity="bottom"
+            />
+        </FrameLayout>
+
+        <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/TextViewOne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Text view one"
+                android:layout_marginTop="@dimen/stdMarginTopBottom"
+                app:layout_constraintTop_toBottomOf="@id/Frame"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="@dimen/stdMarginLeftRight"
+                android:layout_marginLeft="@dimen/stdMarginLeftRight"
+        />
+        <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/TextViewTwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Text view two"
+                app:layout_constraintTop_toBottomOf="@id/TextViewOne"
+                android:layout_marginTop="@dimen/stdMarginTopBottom"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+        />
+        <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/TextViewThree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Text view three"
+                app:layout_constraintTop_toBottomOf="@id/TextViewTwo"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="@dimen/stdMarginLeftRight"
+                android:layout_marginRight="@dimen/stdMarginLeftRight"
+                android:layout_marginTop="@dimen/stdMarginTopBottom"
+        />
+
+        <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/pointFourText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Text view one"
+                app:layout_constraintTop_toBottomOf="@id/TextViewThree"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="@dimen/stdMarginLeftRight"
+                android:layout_marginLeft="@dimen/stdMarginLeftRight"
+                android:layout_marginTop="@dimen/stdMarginTopBottom"
+        />
+
+        <LinearLayout
+
+                android:id="@+id/changeBg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@id/pointFourText"
+                android:layout_marginTop="@dimen/stdMarginTopBottom">
+
+            <Button
+                    android:id="@+id/green"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/stdMarginLeftRight"
+                    android:text="Green"
+                    android:layout_weight="1"/>
+            <Button
+                    android:id="@+id/red"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/stdMarginLeftRight"
+                    android:text="Red"
+                    android:layout_weight="1"/>
+            <Button
+                    android:id="@+id/blue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/stdMarginLeftRight"
+                    android:text="Blue"
+                    android:layout_weight="1"/>
+        </LinearLayout>
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>
+
+
+

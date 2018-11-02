@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:showIn="@layout/activity_scenario_two"
+        tools:context=".ActivityScenarioTwo"
+        android:layout_margin="@dimen/stdMarginTopBottom">
+
+    <Spinner
+            android:id="@+id/dataSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="@dimen/stdMarginTopBottom"
+            app:layout_constraintTop_toTopOf="parent"
+    >
+
+    </Spinner>
+
+    <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/modeOfTransport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/stdMarginTopBottom"
+            app:layout_constraintTop_toBottomOf="@id/dataSpinner"
+    />
+
+    <android.support.v7.widget.AppCompatButton
+            android:id="@+id/navigate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/stdMarginTopBottom"
+            android:background="@color/colorAccent"
+            app:layout_constraintTop_toBottomOf="@id/modeOfTransport"
+            android:text="@string/navigate"
+    />
+
+</android.support.constraint.ConstraintLayout>
