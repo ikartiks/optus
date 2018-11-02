@@ -26,7 +26,7 @@
     </android.support.design.widget.AppBarLayout>
 
     <android.support.v7.widget.AppCompatButton
-            android:id="@+id/ScenarioOne"
+            android:id="@+id/scenarioOne"
             app:layout_constraintTop_toBottomOf="@id/AppBar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -41,8 +41,8 @@
     />
 
     <android.support.v7.widget.AppCompatButton
-            android:id="@+id/ScenarioTwo"
-            app:layout_constraintTop_toBottomOf="@id/ScenarioOne"
+            android:id="@+id/scenarioTwo"
+            app:layout_constraintTop_toBottomOf="@id/scenarioOne"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/stdMarginTopBottom"

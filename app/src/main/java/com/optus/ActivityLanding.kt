@@ -15,22 +15,22 @@ class ActivityLanding : ActivityBase(), View.OnClickListener {
         setContentView(R.layout.activity_landing)
         setSupportActionBar(toolbar)
 
-        ScenarioOne.setOnClickListener(this)
-        ScenarioTwo.setOnClickListener(this)
+        scenarioOne.setOnClickListener(this)
+        scenarioTwo.setOnClickListener(this)
     }
 
     override fun onClick(v: View?) {
         when(v?.id){
-            R.id.ScenarioOne->{
+            R.id.scenarioOne->{
 
                 val intent = Intent(this, ActivityScenarioOne::class.java)
-                val activityOptionsCompat = ActivityOptionsCompat.makeSceneTransitionAnimation(this, ScenarioOne,
+                val activityOptionsCompat = ActivityOptionsCompat.makeSceneTransitionAnimation(this, scenarioOne,
                     "profile")
                 ActivityCompat.startActivity(this, intent, activityOptionsCompat.toBundle())
             }
-            R.id.ScenarioTwo->{
+            R.id.scenarioTwo->{
                 val intent = Intent(this, ActivityScenarioTwo::class.java)
-                val activityOptionsCompat = ActivityOptionsCompat.makeSceneTransitionAnimation(this, ScenarioTwo,
+                val activityOptionsCompat = ActivityOptionsCompat.makeSceneTransitionAnimation(this, scenarioTwo,
                     "profile")
                 ActivityCompat.startActivity(this, intent, activityOptionsCompat.toBundle())
             }
